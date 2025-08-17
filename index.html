@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/svg/icons8-mortal-kombat.svg"
+      type="image/x-icon"
+    />
+    <title>Fight Club</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="nameContainer">
+        <h1>Create Your Character</h1>
+        <div class="form-box">
+          <label for="characterName">Character Name</label>
+          <input class="form-box__input" type="text" placeholder="Hero Name" />
+          <p class="form-box__error">Please enter your name!!!</p>
+          <button class="btn-box__button">Create</button>
+        </div>
+      </div>
+      <div class="container" id="avatarContainer">
+        <!-- <p class="avatar-container__error">Please Choose Your HERO!!!</p> -->
+        <h1>Select Your Avatar</h1>
+        <div class="avatar-options">
+          <img class="avatar" src="./assets/img/Goro.jpg" alt="Avatar1" />
+          <img class="avatar" src="./assets/img/Baraka.jpg" alt="Avatar2" />
+          <img class="avatar" src="./assets/img/Briggs.jpg" alt="Avatar3" />
+          <img class="avatar" src="./assets/img/Cameleon.jpg" alt="Avatar4" />
+          <img class="avatar" src="./assets/img/Jax.jpg" alt="Avatar5" />
+          <img class="avatar" src="./assets/img/Jonny-Kage.jpg" alt="Avatar6" />
+          <img class="avatar" src="./assets/img/Kabal.jpg" alt="Avatar7" />
+          <img class="avatar" src="./assets/img/Kano.jpg" alt="Avatar8" />
+          <img class="avatar" src="./assets/img/Kassandra.jpg" alt="Avatar9" />
+          <img class="avatar" src="./assets/img/Kira.jpg" alt="Avatar10" />
+          <img class="avatar" src="./assets/img/Kitana.jpg" alt="Avatar11" />
+          <img class="avatar" src="./assets/img/Kotal.jpg" alt="Avatar12" />
+          <img class="avatar" src="./assets/img/Kronika.jpg" alt="Avatar13" />
+          <img class="avatar" src="./assets/img/Meat.jpg" alt="Avatar14" />
+          <img class="avatar" src="./assets/img/Milena.jpg" alt="Avatar15" />
+          <img
+            class="avatar"
+            src="./assets/img/Night-Wolf.jpg"
+            alt="Avatar16"
+          />
+          <img class="avatar" src="./assets/img/Nitara.jpg" alt="Avatar17" />
+          <img class="avatar" src="./assets/img/Onaga.jpg" alt="Avatar18" />
+          <img class="avatar" src="./assets/img/Sub-Zero.jpg" alt="Avatar19" />
+        </div>
+        <button class="btn-box__button" id="startButton">Choose</button>
+      </div>
+      <div class="container" id="homePage">
+        <button class="displayName-btn">Change Name</button>
+        <p id="displayName"></p>
+        <img
+          id="displayAvatar"
+          src=""
+          alt="Selected Avatar"
+          style="width: 600px; height: 700px"
+        />
+        <div>
+          <label for="healthProgress"></label>
+          <progress
+            id="healthProgress"
+            value="100"
+            max="100"
+            style="width: 100%; height: 44px"
+          ></progress>
+          <p id="healthValue">Health: 150/150</p>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item nav-item-activ">Home</li>
+          <li class="nav-item">Settings</li>
+        </ul>
+      </nav>
+      <div class="container" id="stats">
+        <div class="container-stats">
+          <button class="change-avatar">Change Avatar</button>
+          <p class="stat-win stat">Wins: 0</p>
+          <p class="stat-lose stat">Loses: 0</p>
+        </div>
+      </div>
+      <div class="container-fight">
+        <button class="fight-btn">Into battle</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  background: linear-gradient(270deg, #eb2d07, #3e5542, #5b69a4, #0dad1a);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 5s ease infinite;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  background-image: url(./assets/img/installation/Mortal-kombat-fighters.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  left: 37%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 700px;
+  padding: 130px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  color: white;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  border-radius: 50%;
+}
+
+.btn-box__button {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  color: aliceblue;
+  background-color: #468d2f;
+}
+
+.form-box__error {
+  color: red;
+  font-size: 20px;
+  display: none;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+}
+
+.error-input {
+  border: 2px solid red;
+}
+
+.btn-box__button:hover {
+  background-color: #287b0c;
+}
+
+.btn-box__button:active {
+  background-color: #194b08;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+
+.avatar-options img:hover {
+  border: 1px solid #ffcc00;
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
+
+.selected {
+  border: 2px solid #11b61c;
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 50px rgb(11, 186, 90);
+}
+
+#avatarContainer {
+  left: 22%;
+  top: 10%;
+  max-width: 1000px;
+  display: none;
+  z-index: 10;
+}
+
+#homePage {
+  display: none;
+  top: 6%;
+  left: 2%;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+#startButton {
+  display: none;
+}
+
+#displayName {
+  color: #dac90d;
+  font-size: 40px;
+}
+
+.navigation {
+  position: absolute;
+  right: 40%;
+}
+
+.nav-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 120px;
+  padding: 20px;
+}
+
+.nav-item {
+  color: #f0eaea;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.nav-item-activ {
+  border-bottom: 2px solid yellow;
+}
+
+.stat {
+  font-size: 40px;
+}
+
+#stats {
+  display: none;
+  width: 255px;
+  height: 400px;
+}
+
+.container-stats {
+  position: absolute;
+}
+
+.change-avatar {
+  margin-bottom: 20px;
+  height: 35px;
+  cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.change-avatar:hover {
+  background-color: #e87715;
+}
+
+.displayName-btn {
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
+.displayName-btn:hover {
+  background-color: #e87715;
+}
+
+.container-fight {
+  display: none;
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+}
+
+.fight-btn {
+  width: 350px;
+  height: 100px;
+  font-size: 50px;
+  color: #f0eaea;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 5%;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.fight-btn:hover {
+  background-color: rgb(16, 15, 15);
+  color: #f5afaf;
+}
+
+.fight-btn:active {
+  background-color: rgb(39, 37, 37);
+}
