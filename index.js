@@ -69,6 +69,27 @@ function showFightButton() {
 }
 
 function init() {
+  const savedCharacterName = localStorage.getItem("characterName");
+  const savedAvatar = localStorage.getItem("selectedAvatar");
+
+  if (savedCharacterName) {
+    document.querySelector('input[placeholder="Hero Name"]').value = savedCharacterName;
+    document.getElementById("displayName").textContent = savedCharacterName;
+  }
+
+  if (savedAvatar) {
+    selectedAvatar = savedAvatar;
+    document.getElementById("displayAvatar").src = selectedAvatar;
+
+    document.querySelectorAll(".avatar-options img").forEach((img) => {
+      if (img.src === selectedAvatar) {
+        img.classList.add("selected");
+      }
+    });
+
+    document.getElementById("startButton").style.display = "block";
+  }
+
   document
     .querySelector(".btn-box__button")
     .addEventListener("click", showAvatarSelection);
@@ -109,7 +130,6 @@ window.addEventListener("DOMContentLoaded", () => {
     homePage.style.display = "none";
   } else {
     homePage.style.display = "block";
-    
     localStorage.setItem("welcomeShown", "true");
   }
 });
